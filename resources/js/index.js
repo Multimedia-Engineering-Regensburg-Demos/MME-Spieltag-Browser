@@ -1,5 +1,7 @@
 /* eslint-env browser */
 
+import DataProvider from "./data/DataProvider.js";
+
 /**
  * Hinweise zur Nutzung der openligadb-API
  * 
@@ -18,4 +20,12 @@
  * verwendeten Daten, werden sich bis zum nächsten (letzten) Spieltag nicht ändern.
  */
 
-console.log("Starting Spieltag-Browser");
+function init() {
+    console.log("Starting Spieltag-Browser");
+    let dataProvider = new DataProvider();
+    dataProvider.getData().then(function(result) {
+        console.log(result);
+    });
+}
+
+init();
