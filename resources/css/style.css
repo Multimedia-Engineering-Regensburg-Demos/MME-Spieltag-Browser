@@ -1,0 +1,33 @@
+:root {
+    --gunmetal: #292f36ff;
+    --medium-turquoise: #4ecdc4ff;
+    --mint-cream: #f7fff7ff;
+    --bittersweet: #ff6b6bff;
+    --naples-yellow: #ffe66dff;
+}
+
+html,
+body {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--mint-cream);
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    margin: 0 0 1vh 0;
+    padding: 1%;
+    text-align: center;
+    font-size: 4em;
+    color: var(--bittersweet);
+}
+
+#content {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+}
